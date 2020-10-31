@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:background="#061113"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#061113"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#061113"
+                android:fontFamily="sans-serif-condensed"
+                android:text="TODAS LAS PELÍCULAS"
+                android:textColor="#13475A"
+                android:textStyle="bold"
+
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#061113"
+                android:fontFamily="sans-serif-condensed"
+                android:text="HOY KINÉPOLI"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:menu="@menu/nav_items" />
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#040404"
+            android:columnCount="2"
+            android:paddingTop="50dp"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="206dp"
+                android:layout_height="272dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="left"
+                android:src="@drawable/matar">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="203dp"
+                android:layout_height="272dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:src="@drawable/trols2">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="206dp"
+                android:layout_height="270dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="left"
+                android:paddingTop="3dp"
+                android:src="@drawable/green">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="203dp"
+                android:layout_height="271dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:paddingTop="3dp"
+                android:src="@drawable/cartel">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="206dp"
+                android:layout_height="270dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_gravity="left"
+                android:paddingTop="3dp"
+                android:src="@drawable/green">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="203dp"
+                android:layout_height="271dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:paddingTop="3dp"
+                android:src="@drawable/cartel">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="206dp"
+                android:layout_height="270dp"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_gravity="left"
+                android:paddingTop="3dp"
+                android:src="@drawable/infi">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="203dp"
+                android:layout_height="271dp"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_gravity="right"
+                android:paddingTop="3dp"
+                android:src="@drawable/star">
+
+            </ImageView>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CC222323"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_items"
+        tools:ignore="MissingConstraints">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

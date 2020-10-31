@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyCopia</string>
+    <string name="mas">mas</string>
+    <string name="cine">Cine</string>
+    <string name="Entrada">Entrada</string>
+    <string name="Escaneo">Escaneo</string>
+    <string name="Calendario">Calendario</string>
+</resources>

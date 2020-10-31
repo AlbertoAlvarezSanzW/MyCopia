@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/baseline_event_note_black_18dp"
+        android:title="@string/Calendario" />
+    <item
+        android:icon="@drawable/baseline_crop_free_black_18dp"
+        android:title="@string/Escaneo" />
+    <item
+        android:icon="@drawable/baseline_confirmation_number_black_18dp"
+        android:title="@string/Entrada" />
+    <item
+        android:icon="@drawable/baseline_local_play_black_18dp"
+        android:title="@string/cine" />
+    <item
+        android:icon="@drawable/baseline_more_horiz_black_18dp"
+        android:title="@string/mas" />
+
+</menu>
